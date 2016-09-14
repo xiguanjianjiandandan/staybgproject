@@ -1,0 +1,17 @@
+.loginbox{
+    width: 400px;
+    height: 350px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+}
+.loginbox label{
+    margin: 10px 0;
+}
+.loginbox .item{
+    margin: 10px 0;
+}

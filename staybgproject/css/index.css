@@ -1,0 +1,95 @@
+html,body{
+    height: 100%;
+}
+.section{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.header{
+    height: 100px;
+    background: #111;;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+.header span{
+    display: block;
+    width: 135px;
+    height: 27px;
+    background: url("../images/logo.png") no-repeat left top;
+    float: left;
+    margin:35px 0 0 50px;
+}
+.header h1{
+    color:#fff;
+    margin: 35px 100px;
+    float: left;
+}
+.header p{
+    float: right;
+    color: #fff;
+    margin-top: 60px;
+    margin-right: 10px;
+}
+.header .userIcon{
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-top: 40px;
+    margin-right: 35px;
+}
+.header .userIcon img{
+    width: 50px;
+    height: 50px;
+
+}
+.header button{
+    width: 80px;
+    height: 25px;
+    border-radius: 0 0 10px 10px;
+    line-height: 25px;
+   position: absolute;
+    right: 35px;
+    top: 0;
+}
+.center{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 70px;
+    background: blueviolet;
+    margin: 0;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+.center .aside{
+    height: 100%;
+    background: red;
+    margin:0;
+    padding: 0;
+}
+
+.center .content{
+    height: 100%;
+    background: blue;
+    margin:0;
+    padding: 0;
+}
+.footer{
+    height: 70px;
+    background: chartreuse;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
