@@ -15,3 +15,10 @@
 .loginbox .item{
     margin: 10px 0;
 }
+#loginfo{
+    visibility: hidden;
+}
+.toReg{
+    float: right;
+    margin-top: 10px;
+}

@@ -1,0 +1,11 @@
+.formbox{
+    width: 500px;
+    margin-left: 15px;
+    text-align: center;
+}
+.formbox .row{
+    margin: 15px 0;
+}
+.regbtn{
+    margin: 0 auto;
+}

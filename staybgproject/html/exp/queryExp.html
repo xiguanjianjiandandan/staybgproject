@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--这句话的作用是为了在页面加载的时候，控制页面的缩放比例-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/bootstrap/reset.css">
+    <!-- 引入bootstrap中css样式-->
+    <link href="../../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!--自定义样式-->
+    <link rel="stylesheet" href="../../css/queryExp.css">
+    <link rel="stylesheet" href="../../css/addExp.css">
+    <!-- 为了使IE6,7,8支持html5新增的标签-->
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <!--为了使IE6,7,8支持css3新增的标签-->
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <!-- 由于boostrap是基于jquery的框架，所以在引入bootstrap的js文件之前，必须首先引入jqeury文件 -->
+    <script src="../../js/jquery/jquery-3.1.0.js"></script>
+    <!--引入bootstrap文件 -->
+    <script src="../../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../js/queryExp.js" charset="gbk"></script>
+</head>
+<body>
+<ol class="breadcrumb">
+    <li><a href="#">首页</a></li>
+    <li><a href="#">体验管理</a></li>
+    <li class="active">体验列表</li>
+</ol>
+<table class="table table-bordered">
+    <thead>
+    <tr class="active">
+        <th>体验ID</th>
+        <th>体验名称</th>
+        <th>体验图片url</th>
+        <th>是否免费</th>
+        <th>体验类型</th>
+        <th>体验详情</th>
+        <th>删除操作</th>
+        <th>更新操作</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+<ul id="pagebox" class="pagination">
+    <li><a  id="start" href="#">首页</a></li>
+    <li><a id="pre" href="#">&laquo;</a></li>
+    <li><a id="one"  href="#">1</a></li>
+    <li><a id="two"  href="#">2</a></li>
+    <li><a id="three" href="#">3</a></li>
+    <li><a id="four" href="#">4</a></li>
+    <li><a id="five" href="#">5</a></li>
+    <li><a id="next" href="#">&raquo;</a></li>
+    <li><a id="end" href="#">尾页</a></li>
+</ul>
+</body>
+</html>

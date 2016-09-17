@@ -1,5 +1,5 @@
 .loginbox{
-    width: 400px;
+    width: 500px;
     height: 350px;
     position: absolute;
     left: 0;
@@ -9,9 +9,26 @@
     margin: auto;
     text-align: center;
 }
+.loginbox .row{
+    margin: 0;
+}
+.loginbox .row .info{
+    padding-left: 0;
+}
 .loginbox label{
     margin: 10px 0;
 }
 .loginbox .item{
     margin: 10px 0;
+}
+.loginbox  i{
+    display: inline-block;
+    margin:15px 0;
+}
+.loginbox span{
+    float: right;
+    margin: 10px 0;
+}
+#rememberbtn{
+    float: left;
 }

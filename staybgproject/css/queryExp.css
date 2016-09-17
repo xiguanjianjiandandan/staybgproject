@@ -1,0 +1,12 @@
+table{
+    text-align: center;
+}
+table tr th{
+    text-align: center;
+    width: 200px;
+}
+#pagebox{
+    position: absolute;
+    right: 40px;
+    bottom: 15px;
+}

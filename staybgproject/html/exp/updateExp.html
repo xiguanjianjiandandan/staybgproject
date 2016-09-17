@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--这句话的作用是为了在页面加载的时候，控制页面的缩放比例-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/bootstrap/reset.css">
+    <!-- 引入bootstrap中css样式-->
+    <link href="../../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!--自定义样式-->
+    <link rel="stylesheet" href="../../css/updateExp.css">
+    <!-- 为了使IE6,7,8支持html5新增的标签-->
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <!--为了使IE6,7,8支持css3新增的标签-->
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <!-- 由于boostrap是基于jquery的框架，所以在引入bootstrap的js文件之前，必须首先引入jqeury文件 -->
+    <script src="../../js/jquery/jquery-3.1.0.js"></script>
+    <!--引入bootstrap文件 -->
+    <script src="../../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../js/updateExp.js"></script>
+</head>
+<body>
+<ol class="breadcrumb">
+    <li><a href="#">首页</a></li>
+    <li><a href="#">管理员管理</a></li>
+    <li class="active">更新管理员</li>
+</ol>
+<div class="formbox">
+    <div class="row">
+        <label for="expid" class="col-md-3 control-label">体验ID:</label>
+        <div class="item col-md-8" >
+            <input id="expid" type="text" class="form-control" value="请输入体验ID">
+        </div >
+        <div class="info col-md-1">
+            <i id="expidInfo"></i>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <label for="titletext" class="col-sm-3 control-label">体验名称:</label>
+        <div class="item col-sm-8" >
+            <input id="titletext" type="text" class="form-control" value="请输入体验名称">
+        </div>
+        <div  class="info col-sm-1">
+            <i id="titletextInfo"></i>
+        </div>
+
+
+    </div>
+    <div class="row">
+        <label for="titleimg" class="col-sm-3 control-label">体验图片:</label>
+        <div class="item col-sm-8" >
+            <input id="titleimg" type="text" class="form-control" value="请输入密码">
+        </div>
+        <div  class="info col-sm-1">
+            <i id="titleimgInfo"></i>
+        </div>
+
+
+    </div>
+
+
+    <div class="row">
+        <label class="col-sm-3">请选择体验价格:</label>
+        <div class="col-sm-8">
+            <label class="radio-inline">
+                <input type="radio" name="optionsPrice" id="optionsPrice1" value="yes" checked="">
+                免费
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="optionsPrice" id="optionsPrice2" value="no" checked="checked" >
+                限时抢购
+            </label>
+        </div>
+    </div>
+
+    <div class="row">
+        <label class="col-sm-3">请选择体验类型:</label>
+        <div class="col-sm-8">
+            <label class="radio-inline">
+                <input type="radio" name="optionsClass" id="optionsClass1" value="" checked="">
+                精选
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="optionsClass" id="optionsClass2" value="" checked="checked" >
+                慢旅
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="optionsClass" id="optionsClass3" value="" checked="">
+                偷闲
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="optionsClass" id="optionsClass4" value="" >
+                话题
+            </label>
+
+        </div>
+    </div>
+    <div class="row imgItem">
+        <label for="titleimg" class="col-sm-3 control-label">体验详情:</label>
+        <div class="item col-sm-4" >
+            <input id="" type="text" class="form-control expdetailurl" value="请输入图片url">
+        </div>
+        <div class="item col-sm-4" >
+            <input id="" type="text" class="form-control expdetaildes" value="请输入图片描述">
+        </div>
+        <div  class="info col-sm-1">
+            <button id="addDetailbtn">+</button>
+        </div>
+    </div>
+    <input type="button" id="updateexpbtn" class="btn btn-primary" value="更新体验">
+</div>
+</body>
+</html>

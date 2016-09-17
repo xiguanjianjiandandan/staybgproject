@@ -6,12 +6,13 @@
     <!--这句话的作用是为了在页面加载的时候，控制页面的缩放比例-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap 101 Template</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap/reset.css">
     <!-- 引入bootstrap中css样式-->
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!--自定义样式-->
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/reset.css">
+
     <!-- 为了使IE6,7,8支持html5新增的标签-->
     <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <!--为了使IE6,7,8支持css3新增的标签-->
@@ -20,7 +21,7 @@
     <script src="js/jquery/jquery-3.1.0.js"></script>
     <!--引入bootstrap文件 -->
     <script src="js/bootstrap/bootstrap.min.js"></script>
-
+    <script src="js/index.js"></script>
 </head>
 <body>
 <div class="section container">
@@ -31,33 +32,36 @@
         <div class="userIcon">
             <img class="img-circle" src="images/default_face.png" alt="">
         </div>
-        <p class="">欢迎<b>冯煜超</b>登录后台</p>
-        <button class="">退出系统</button>
+        <p class="">欢迎<b id="currentUser">冯煜超</b>登录后台</p>
+        <button id="exitbtn">退出系统</button>
     </div>
     <div class="center row">
         <div class="aside col-md-2">
-            <div class="navbar navbar-default" role="navigation">
-                　<div class="navbar-header">
-                　    <a href="##" class="navbar-brand">慕课网</a>
-                　</div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="##">网站首页</a></li>
-                    <li class="dropdown">
-                        <a href="##" data-toggle="dropdown" class="dropdown-toggle">系列教程<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="##">CSS3</a></li>
-                            <li><a href="##">JavaScript</a></li>
-                            <li class="disabled"><a href="##">PHP</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="##">名师介绍</a></li>
-                    <li><a href="##">成功案例</a></li>
-                    <li><a href="##">关于我们</a></li>
+            <p>管理员中心</p>
+            <div class="sidebar-menu">
+                <a id="adminMenuTitle" href="#adminMenu" class="nav-header menu-first collapsed" data-toggle="collapse"><i class="icon-book icon-large"></i> 管理员管理</a>
+                <ul id="adminMenu" class="nav nav-list collapse menu-second">
+                    <li><a href="html/admin/addAdmin.html" target="curPage"><i class="icon-pencil"></i> 增加管理员</a></li>
+                    <li><a href="html/admin/queryAdmin.html" target="curPage"><i class="icon-list-alt"></i>管理员列表</a></li>
+
                 </ul>
+                <a href="#userMeun" class="nav-header menu-first collapsed" data-toggle="collapse"><i class="icon-user-md icon-large"></i> 用户管理</a>
+                <ul id="userMeun" class="nav nav-list collapse menu-second">
+                    <li><a href="html/user/addUser.html" target="curPage"><i class="icon-user"></i> 增加用户</a></li>
+                    <li><a href="html/user/queryUser.html" target="curPage"><i class="icon-list"></i> 用户列表</a></li>
+
+                </ul>
+                <a href="#expMenu" class="nav-header menu-first collapsed" data-toggle="collapse"><i class="icon-book icon-large"></i> 体验管理</a>
+                <ul id="expMenu" class="nav nav-list collapse menu-second">
+                    <li><a href="html/exp/addExp.html" target="curPage"><i class="icon-pencil"></i> 增加体验</a></li>
+                    <li><a href="html/exp/queryExp.html" target="curPage"><i class="icon-list-alt"></i>体验列表</a></li>
+
+                </ul>
+
             </div>
         </div>
         <div class="content col-md-10">
-
+            <iframe src="" name="curPage"></iframe>
         </div>
     </div>
     <div class="footer row">
